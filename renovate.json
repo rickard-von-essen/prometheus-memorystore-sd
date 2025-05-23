@@ -1,0 +1,126 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    ":automergeDigest",
+    ":automergeMinor",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":semanticCommitScope(deps)"
+  ],
+  "assignees": [
+    "rickard-von-essen"
+  ],
+  "internalChecksFilter": "strict",
+  "platformAutomerge": true,
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths"
+  ],
+  "packageRules": [
+    {
+      "description": "One week stability period for Go packages",
+      "matchDatasources": [
+        "go"
+      ],
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "description": "Bump minimum Go version",
+      "matchManagers": [
+        "gomod"
+      ],
+      "matchDepTypes": [
+        "golang"
+      ],
+      "rangeStrategy": "replace"
+    },
+    {
+      "description": "Exclude retracted Prometheus versions: https://github.com/renovatebot/renovate/issues/13012",
+      "matchPackageNames": [
+        "github.com/prometheus/prometheus"
+      ],
+      "allowedVersions": "<1"
+    },
+    {
+      "description": "Customize golang updates commit message",
+      "matchDatasources": [
+        "golang-version"
+      ],
+      "matchPackageNames": [
+        "go"
+      ],
+      "commitMessageTopic": "Go"
+    },
+    {
+      "matchDepTypes": [
+        "require"
+      ],
+      "semanticCommitType": "build"
+    },
+    {
+      "matchPackageNames": [
+        "go"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "semanticCommitType": "build"
+    },
+    {
+      "matchPackageNames": [
+        "quay.io/prometheus/busybox"
+      ],
+      "semanticCommitType": "build"
+    }
+  ],
+  "customManagers": [
+    {
+      "description": "Update version keys in YAML files",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/).*.ya?ml$/"
+      ],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: packageName=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s*[\\w-_]*version: (?<currentValue>.*?)\\s"
+      ]
+    },
+    {
+      "description": "Update base image in .goreleaser.yml",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)\\.goreleaser\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "base_image:\\s+[\"']?(?<depName>\\S+?)(?::(?<currentValue>\\S+?))?(?:@(?<currentDigest>sha256:\\S+))?[\"']?\\s"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    },
+    {
+      "description": "Update Golang in .go-version file",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)\\.go-version$/"
+      ],
+      "matchStrings": [
+        "^\\s*(?<currentValue>.+?)\\s*$"
+      ],
+      "depNameTemplate": "go",
+      "datasourceTemplate": "golang-version"
+    },
+    {
+      "description": "Update semantic-release plugins",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^\\.github/workflows/build\\.yml$/"
+      ],
+      "matchStrings": [
+        "\\s{12}(?<depName>\\S+?)@(?<currentValue>.+?)\\s"
+      ],
+      "datasourceTemplate": "npm"
+    }
+  ]
+}

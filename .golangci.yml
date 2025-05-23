@@ -1,0 +1,52 @@
+version: "2"
+linters:
+  enable:
+    - errorlint
+    - exptostd
+    - gocritic
+    - godot
+    - loggercheck
+    - misspell
+    - nilnesserr
+    - nolintlint
+    - perfsprint
+    - predeclared
+    - revive
+    - sloglint
+    - testifylint
+    - unconvert
+    - unused
+    - usestdlibvars
+    - whitespace
+  settings:
+    errcheck:
+      exclude-functions:
+        # Never check for logger errors.
+        - (github.com/go-kit/log.Logger).Log
+        # Used in HTTP handlers, any error is handled by the server itself.
+        - (net/http.ResponseWriter).Write
+  exclusions:
+    generated: lax
+    rules:
+      - linters:
+          - errcheck
+        text: Error return value of .((os\.)?std(out|err)\..*|.*Close|.*Flush|os\.Remove(All)?|.*print(f|ln)?|os\.(Un)?Setenv). is not checked
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gci
+    - gofumpt
+  settings:
+    gci:
+      sections:
+        - standard
+        - default
+        - prefix(github.com/rickard-von-essen/prometheus-memorystore-sd)
+    gofumpt:
+      extra-rules: true
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
