@@ -250,6 +250,23 @@ func parseInstanceName(name string) (string, string, string) {
 	return string(parts[1]), string(parts[2]), string(parts[3])
 }
 
+func ouputHTTPHandler(outputFile *string, logger *slog.Logger) func(w http.ResponseWriter, _ *http.Request) {
+	return func(w http.ResponseWriter, _ *http.Request) {
+		jsonFile, err := os.ReadFile(*outputFile)
+		// if we os.Open returns an error then handle it
+		if err != nil {
+			logger.Error("Failed to load target file.", "err", err)
+			return
+		}
+
+		w.Header().Add("Content-Type", "application/json")
+		_, err = w.Write(jsonFile)
+		if err != nil {
+			logger.Error("Response failed.", "err", err)
+		}
+	}
+}
+
 func main() {
 	var (
 		gcpProject            = kingpin.Flag("gcp.project", "The GCP project ID. If not provided, the default project from the GCP credential chain is used.").String()
@@ -257,6 +274,7 @@ func main() {
 		msMemcachedInstanceID = kingpin.Flag("memorystore.memcached-instance-id", "The user-supplied Memorystore Memcache identifier. If this parameter is specified, only information about that specific instance is returned. This parameter should be on the form projects/{project_id}/locations/{location_id}/instances/{instance_id}.").String()
 		targetRefreshInterval = kingpin.Flag("target.refresh-interval", "Refresh interval to re-read the memorystore list.").Default("60s").Duration()
 		outputFile            = kingpin.Flag("output.file", "The output filename for file_sd compatible file.").Default("memorystore.json").String()
+		outputHTTPPath        = kingpin.Flag("output.http-path", "Path under which to expose targets, must start with /. \"\" disables HTTP service discovery").Default("/memorystore.json").String()
 		webConfig             = webflag.AddFlags(kingpin.CommandLine, ":8888")
 		metricsPath           = kingpin.Flag("web.telemetry-path", "Path under which to expose metrics.").Default("/metrics").String()
 	)
@@ -326,7 +344,12 @@ func main() {
 		logger.Error("Error instantiating landing page", "err", err)
 		os.Exit(1)
 	}
+
 	http.Handle("/", landingPage)
+
+	if *outputHTTPPath != "" {
+		http.HandleFunc(*outputHTTPPath, ouputHTTPHandler(outputFile, logger))
+	}
 
 	srv := &http.Server{}
 
