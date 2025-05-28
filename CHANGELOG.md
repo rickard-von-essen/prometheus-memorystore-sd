@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.0.3...v1.1.0) (2025-05-28)
+
+### Features
+
+* Serve the output also over HTTP ([fe4375d](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/fe4375d669ac9ce85651d4e1782ac58b509938dc))
+
 ## [1.0.3](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.0.2...v1.0.3) (2025-05-24)
 
 ### Miscellaneous Chores
