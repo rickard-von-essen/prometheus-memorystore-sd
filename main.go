@@ -269,8 +269,8 @@ func ouputHTTPHandler(outputFile *string, logger *slog.Logger) func(w http.Respo
 
 func main() {
 	var (
-		gcpProject            = kingpin.Flag("gcp.project", "The GCP project ID. If not provided, the default project from the GCP credential chain is used.").String()
-		gcpLocation           = kingpin.Flag("gcp.location", "The GCP Memorystore Memcached location ID.").String()
+		gcpProject            = kingpin.Flag("gcp.project", "The GCP project ID. If not provided, the default project from the GCP credential chain is used. Can be set with environment variable GCP_PROJECT").Envar("GCP_PROJECT").String()
+		gcpLocation           = kingpin.Flag("gcp.location", "The GCP Memorystore Memcached location ID. Can be set with environment variable GCP_REGION. Required").Envar("GCP_REGION").Required().String()
 		msMemcachedInstanceID = kingpin.Flag("memorystore.memcached-instance-id", "The user-supplied Memorystore Memcache identifier. If this parameter is specified, only information about that specific instance is returned. This parameter should be on the form projects/{project_id}/locations/{location_id}/instances/{instance_id}.").String()
 		targetRefreshInterval = kingpin.Flag("target.refresh-interval", "Refresh interval to re-read the memorystore list.").Default("60s").Duration()
 		outputFile            = kingpin.Flag("output.file", "The output filename for file_sd compatible file.").Default("memorystore.json").String()
