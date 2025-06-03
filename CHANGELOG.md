@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.1.1...v1.2.0) (2025-06-03)
+
+### Features
+
+* Read GCP_PROJECT and GCP_REGION env vars ([780c540](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/780c5403bb831cba0353006d18a109bc8d896e9c))
+
 ## [1.1.1](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.1.0...v1.1.1) (2025-05-29)
 
 ### Build System
