@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.7](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.6...v1.2.7) (2025-06-30)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency semantic-release to v24.2.6 ([e44916e](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/e44916ee2adb69bf373046993a8ce7b4a60b54db))
+* **deps:** update github/codeql-action action to v3.29.1 ([df1f440](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/df1f440cb6b9106cc2785cf14cc220e16083a577))
+
+### Build System
+
+* **deps:** update module github.com/prometheus/common to v0.65.0 ([#25](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/25)) ([d2b7aa6](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/d2b7aa6c76ddc500bd0a3e2c1439377ee6f35172))
+
 ## [1.2.6](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.5...v1.2.6) (2025-06-25)
 
 ### Miscellaneous Chores
