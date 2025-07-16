@@ -11,7 +11,7 @@ require (
 	github.com/prometheus/common v0.65.0
 	github.com/prometheus/exporter-toolkit v0.14.0
 	github.com/prometheus/prometheus v0.304.2
-	google.golang.org/api v0.240.0
+	google.golang.org/api v0.241.0
 )
 
 require (
