@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.13](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.12...v1.2.13) (2025-07-21)
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v3.29.3 ([4f3f579](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/4f3f579f3271aac3373d3c61d308afcbb4688d97))
+* **deps:** update module github.com/golangci/golangci-lint to v2.2.2 ([#39](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/39)) ([c46bf83](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/c46bf83bf857cd46b58856a2b9e63d2c6895cd00))
+* **deps:** update sigstore/cosign-installer action to v3.9.2 ([#38](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/38)) ([3cd7610](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3cd76106d0059923ffa91832f9e9507709c7e3be))
+
+### Build System
+
+* **deps:** update module github.com/prometheus/prometheus to v0.305.0 ([fdd01b3](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/fdd01b3d83e32d3665e5c25abab7a71cc0bdd880))
+
 ## [1.2.12](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.11...v1.2.12) (2025-07-17)
 
 ### Miscellaneous Chores
