@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.20](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.19...v1.2.20) (2025-08-15)
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v4.3.0 ([cbccbef](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/cbccbef7dffd3e7d044073003633f97cc230f7da))
+* **deps:** update actions/checkout action to v5 ([3d888a5](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3d888a5f66249a2f2b2f62a52379fa2105a4e1f2))
+* **deps:** update github/codeql-action action to v3.29.7 ([#54](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/54)) ([af5e280](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/af5e280332e587aa631b36a1a9928536210c1b43))
+* **deps:** update github/codeql-action action to v3.29.8 ([#55](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/55)) ([5255f04](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/5255f0476cc7c17448cacc493a5508ed1825615a))
+* **deps:** update github/codeql-action action to v3.29.9 ([b69ec7b](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/b69ec7bcc672b0ef7514d008a9ad410f5d66edbf))
+* **deps:** update goreleaser/goreleaser-action action to v6.4.0 ([58ee82f](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/58ee82f220a65c56412a4bcb2525666d17b709c0))
+* **deps:** update module github.com/golangci/golangci-lint to v2.3.1 ([4e86e91](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/4e86e919c11fe5eec59faa613e041290949bfd7d))
+* **deps:** update module github.com/golangci/golangci-lint to v2.4.0 ([9713fdc](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/9713fdcde028607d78053437d1fab59310006da6))
+
+### Build System
+
+* **deps:** update go to v1.25.0 ([d200bd3](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/d200bd37a69c90c68949be92ecb12cfae32e2c8d))
+
 ## [1.2.19](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.18...v1.2.19) (2025-08-07)
 
 ### Build System
