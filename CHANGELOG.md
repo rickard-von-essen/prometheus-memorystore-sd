@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.22](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.21...v1.2.22) (2025-08-26)
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v3.29.11 ([af63f47](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/af63f4764122689e0d5b089d924de3d89cb18676))
+
+### Build System
+
+* **deps:** update module google.golang.org/api to v0.248.0 ([3428103](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3428103522540817a500a285eb7ffd225e6105fb))
+
 ## [1.2.21](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.20...v1.2.21) (2025-08-20)
 
 ### Miscellaneous Chores
