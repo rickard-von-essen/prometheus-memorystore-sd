@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.25](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.24...v1.2.25) (2025-09-11)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency semantic-release to v24.2.8 ([#76](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/76)) ([9605b1b](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/9605b1b806f41fd7c59d5594326467a6d287fcda))
+* **deps:** update github/codeql-action action to v3.30.3 ([#77](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/77)) ([30985cb](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/30985cb2895621a94f8c8da11589926f29fb5bd0))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.12.0 ([#75](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/75)) ([c6e7eb8](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/c6e7eb8e795e4f23429ec413ead298e883ff3cdc))
+
+### Build System
+
+* **deps:** update module github.com/prometheus/client_golang to v1.23.1 ([40b9d20](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/40b9d20cab75e1217c73e1d0b9f7d469d5c68a3d))
+
 ## [1.2.24](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.23...v1.2.24) (2025-09-09)
 
 ### Miscellaneous Chores
