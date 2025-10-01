@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.31](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.30...v1.2.31) (2025-10-01)
+
+### Bug Fixes
+
+* add pprof HTTP endpoints and fix discovery metrics ([6437a57](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/6437a57a366c74c4e0484841e1fff98820075b36))
+
+### Miscellaneous Chores
+
+* **deps:** update docker/login-action action to v3.6.0 ([e0cffae](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/e0cffae30315ec8b9e940b5d1fe1f43e110644bc))
+* **deps:** update github/codeql-action action to v3.30.5 ([af8c1f8](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/af8c1f8bb9e310236e01800acf50e797d476c7ae))
+* **deps:** update module github.com/golangci/golangci-lint to v2.5.0 ([#91](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/91)) ([1845a1d](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/1845a1df7cf904b6cbd4ef2b2e6ed348d6e0b3c3))
+
 ## [1.2.30](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.29...v1.2.30) (2025-09-26)
 
 ### Miscellaneous Chores
