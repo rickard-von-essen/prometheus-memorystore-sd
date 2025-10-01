@@ -22,6 +22,7 @@ import (
 	"fmt"
 	"log/slog"
 	"net/http"
+	"net/http/pprof"
 	"os"
 	"regexp"
 	"strconv"
@@ -31,6 +32,7 @@ import (
 	memcachepb "cloud.google.com/go/memcache/apiv1/memcachepb"
 	"github.com/alecthomas/kingpin/v2"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/collectors"
 	versioncollector "github.com/prometheus/client_golang/prometheus/collectors/version"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/model"
@@ -300,6 +302,11 @@ func main() {
 	discovery.RegisterConfig(conf)
 
 	reg := prometheus.NewRegistry()
+	reg.MustRegister(
+		collectors.NewGoCollector(),
+		collectors.NewProcessCollector(collectors.ProcessCollectorOpts{}),
+		versioncollector.NewCollector("prometheus_memorystore_sd"),
+	)
 	refreshMetrics := discovery.NewRefreshMetrics(reg)
 	metrics, err := discovery.RegisterSDMetrics(reg, refreshMetrics)
 	if err != nil {
@@ -326,9 +333,13 @@ func main() {
 	sdAdapter := adapter.NewAdapter(ctx, *outputFile, "memorystore_sd", disc, logger, metrics, reg)
 	sdAdapter.Run()
 
-	prometheus.MustRegister(versioncollector.NewCollector("prometheus_memorystore_sd"))
+	mux := http.NewServeMux()
+	mux.HandleFunc("GET /debug/pprof/", pprof.Index)
+	mux.HandleFunc("GET /debug/pprof/profile", pprof.Profile)
+	mux.HandleFunc("GET /debug/pprof/symbol", pprof.Symbol)
+	mux.HandleFunc("GET /debug/pprof/trace", pprof.Trace)
+	mux.Handle("GET "+*metricsPath, promhttp.HandlerFor(reg, promhttp.HandlerOpts{}))
 
-	http.Handle(*metricsPath, promhttp.Handler())
 	landingPage, err := web.NewLandingPage(web.LandingConfig{
 		Name:        "Memorystore Service Discovery",
 		Description: "Prometheus Memorystore Service Discovery",
@@ -345,13 +356,13 @@ func main() {
 		os.Exit(1)
 	}
 
-	http.Handle("/", landingPage)
+	mux.Handle("GET /", landingPage)
 
 	if *outputHTTPPath != "" {
 		http.HandleFunc(*outputHTTPPath, ouputHTTPHandler(outputFile, logger))
 	}
 
-	srv := &http.Server{}
+	srv := &http.Server{Handler: mux}
 
 	if err := web.ListenAndServe(srv, webConfig, logger); err != nil {
 		logger.Error("Error starting HTTP server", "err", err)
