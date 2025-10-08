@@ -2,7 +2,7 @@ module github.com/rickard-von-essen/prometheus-memorystore-sd
 
 go 1.24.0
 
-toolchain go1.25.1
+toolchain go1.25.2
 
 require (
 	cloud.google.com/go/memcache v1.11.7
