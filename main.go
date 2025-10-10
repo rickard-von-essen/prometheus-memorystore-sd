@@ -333,6 +333,13 @@ func main() {
 	sdAdapter := adapter.NewAdapter(ctx, *outputFile, "memorystore_sd", disc, logger, metrics, reg)
 	sdAdapter.Run()
 
+	links := []web.LandingLinks{
+		{
+			Address: *metricsPath,
+			Text:    "Metrics",
+		},
+	}
+
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /debug/pprof/", pprof.Index)
 	mux.HandleFunc("GET /debug/pprof/profile", pprof.Profile)
@@ -340,16 +347,22 @@ func main() {
 	mux.HandleFunc("GET /debug/pprof/trace", pprof.Trace)
 	mux.Handle("GET "+*metricsPath, promhttp.HandlerFor(reg, promhttp.HandlerOpts{}))
 
+	if *outputHTTPPath != "" {
+		mux.HandleFunc("GET "+*outputHTTPPath, ouputHTTPHandler(outputFile, logger))
+
+		links = append(links,
+			web.LandingLinks{
+				Address: *outputHTTPPath,
+				Text:    "Service Discovery targets",
+			},
+		)
+	}
+
 	landingPage, err := web.NewLandingPage(web.LandingConfig{
 		Name:        "Memorystore Service Discovery",
 		Description: "Prometheus Memorystore Service Discovery",
 		Version:     version.Info(),
-		Links: []web.LandingLinks{
-			{
-				Address: *metricsPath,
-				Text:    "Metrics",
-			},
-		},
+		Links:       links,
 	})
 	if err != nil {
 		logger.Error("Error instantiating landing page", "err", err)
