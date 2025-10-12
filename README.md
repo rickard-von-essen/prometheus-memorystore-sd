@@ -58,29 +58,33 @@ see its [README](https://github.com/prometheus/memcached_exporter#multi-target) 
 
 ```yaml
 scrape_configs:
-  - job_name: "memcached_exporter_targets"
-    file_sd_configs:
-    - files:
-        - /path/to/memorystore.json  # File created by service discovery
-    metrics_path: /scrape
-    relabel_configs:
-      # Filter for memcached cache nodes
-      - source_labels: [__meta_memorystore_memcached_full_version]
-        regex: memcached
-        action: keep
-      # Build Memcached URL to use as target parameter for the exporter
-      - source_labels:
-          - __meta_memorystore_memcached_host
-          - __meta_memorystore_memcached_port
-        replacement: $1
-        separator: ':'
-        target_label: __param_target
-      # Use Memcached URL as instance label
-      - source_labels: [__param_target]
-        target_label: instance
-      # Set exporter address
-      - target_label: __address__
-        replacement: memcached-exporter-service.company.com:9151
+- job_name: memcached_exporter_targets
+  file_sd_configs:
+  - files:
+    - "/path/to/memorystore.json"  # File created by service discovery
+  metrics_path: "/scrape"
+  relabel_configs:
+  # Filter for memcached cache nodes
+  - source_labels:
+    - __meta_memorystore_memcached_full_version
+    regex: memcached.*
+    action: keep
+  # Build Memcached URL to use as target parameter for the exporter
+  - source_labels:
+    - __meta_memorystore_memcached_host
+    - __meta_memorystore_memcached_port
+    replacement: "$1"
+    separator: ":"
+    target_label: __param_target
+  # Use Memcached URL as instance label
+  - source_labels:
+    - __meta_memorystore_memcached_instance_id
+    - __meta_memorystore_memcached_node_id
+    replacement: "$1"
+    separator: "/"
+    target_label: instance
+  - target_label: __address__
+    replacement: memcached-exporter-service.company.com:9150
 ```
 
 ## Development
