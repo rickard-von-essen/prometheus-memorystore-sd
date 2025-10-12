@@ -114,10 +114,11 @@ func (*MemorystoreSDConfig) NewDiscovererMetrics(_ prometheus.Registerer, rmi di
 // the Prometheus Discoverer interface.
 type MemorystoreDiscovery struct {
 	*refresh.Discovery
-	logger   *slog.Logger
-	cfg      *MemorystoreSDConfig
-	memcache *memcache.CloudMemcacheClient
-	lasts    map[string]struct{}
+	logger        *slog.Logger
+	cfg           *MemorystoreSDConfig
+	memcache      *memcache.CloudMemcacheClient
+	lasts         map[string]struct{}
+	clientOptions []option.ClientOption
 }
 
 // NewMemorystoreDiscovery returns a new MemorystoreDiscovery which periodically refreshes its targets.
@@ -154,11 +155,19 @@ func (d *MemorystoreDiscovery) memcacheClient(ctx context.Context) (*memcache.Cl
 		return d.memcache, nil
 	}
 
-	opt := option.WithCredentialsFile(d.cfg.CredentialsFile)
-	var err error
-	d.memcache, err = memcache.NewCloudMemcacheClient(ctx, opt)
+	opts := make([]option.ClientOption, 0, len(d.clientOptions)+1)
+	if d.cfg.CredentialsFile != "" {
+		opts = append(opts, option.WithCredentialsFile(d.cfg.CredentialsFile))
+	}
+	opts = append(opts, d.clientOptions...)
 
-	return d.memcache, err
+	client, err := memcache.NewCloudMemcacheClient(ctx, opts...)
+	if err != nil {
+		return nil, err
+	}
+	d.memcache = client
+
+	return d.memcache, nil
 }
 
 func (d *MemorystoreDiscovery) refresh(ctx context.Context) ([]*targetgroup.Group, error) {
