@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.36](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.35...v1.2.36) (2025-10-14)
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v4.30.8 ([#105](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/105)) ([8b85492](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/8b85492a4896b0cf915a9161020e30568a3a2d40))
+* **docs:** Add AGENTS.md for agenetic AI support ([f53595f](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/f53595f992d88156a3d6d1ae32ec3929f6e1a4e4))
+* **docs:** Update formatting in readme ([71d0f80](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/71d0f80731b612ad7ca4dd52d462bb8f13dedd22))
+
+### Tests
+
+* Add basic Integration Test ([d93a91f](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/d93a91f0265b6392da7d384a2cfc4d239112d98b))
+* Add integration test that verifies http_sd too ([7dd8e9f](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/7dd8e9f2e02ef77451e8080014a11335e69d357e))
+
+### Build System
+
+* **deps:** update dependency go to v1.25.3 ([#108](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/108)) ([9055005](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/905500524e4a956f59f45d8ece8997ace4b10845))
+
 ## [1.2.35](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.34...v1.2.35) (2025-10-10)
 
 ### Bug Fixes
