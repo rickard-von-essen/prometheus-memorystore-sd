@@ -8,7 +8,7 @@ require (
 	cloud.google.com/go/memcache v1.11.7
 	github.com/alecthomas/kingpin/v2 v2.4.0
 	github.com/prometheus/client_golang v1.23.2
-	github.com/prometheus/common v0.66.1
+	github.com/prometheus/common v0.67.1
 	github.com/prometheus/exporter-toolkit v0.14.1
 	github.com/prometheus/prometheus v0.306.0
 	github.com/stretchr/testify v1.11.1
@@ -49,7 +49,7 @@ require (
 	go.opentelemetry.io/otel v1.37.0 // indirect
 	go.opentelemetry.io/otel/metric v1.37.0 // indirect
 	go.opentelemetry.io/otel/trace v1.37.0 // indirect
-	go.yaml.in/yaml/v2 v2.4.2 // indirect
+	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	golang.org/x/crypto v0.42.0 // indirect
 	golang.org/x/net v0.44.0 // indirect
 	golang.org/x/oauth2 v0.31.0 // indirect
