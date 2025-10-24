@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.39](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.38...v1.2.39) (2025-10-24)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency semantic-release to v25 ([1dee913](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/1dee913a8c0313ed2197b72c9427c22966c556f8))
+* **deps:** update dependency semantic-release to v25.0.1 ([3fc6f01](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3fc6f010b4ecf8a5edf15471e20fe239da511d31))
+* **deps:** update github/codeql-action action to v4.30.9 ([bff8dee](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/bff8deeaffab551da3ea17ba77a6793d0b156c44))
+* **deps:** update sigstore/cosign-installer action to v3.10.1 ([#111](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/111)) ([e1567ff](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/e1567ff571b635ba936860a0b0e24fe7f906ae79))
+* **deps:** update sigstore/cosign-installer action to v4 ([62b5eb4](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/62b5eb434c85769068ed931eeb88912bc733d6ea))
+
+### Build System
+
+* **deps:** update module github.com/prometheus/prometheus to v0.307.0 ([bf99019](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/bf99019e07375dd627fa048ec466edde7efdb430))
+
 ## [1.2.38](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.37...v1.2.38) (2025-10-14)
 
 ### Build System
