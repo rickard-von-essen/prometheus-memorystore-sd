@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.49](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.48...v1.2.49) (2025-11-19)
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v5.0.1 ([240d699](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/240d69900a4291de08c7bf165d63e4975f9ef9d5))
+* **deps:** update cycjimmy/semantic-release-action action to v5.0.2 ([7d76ca1](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/7d76ca11ee8610e5692e6a1d335fb7d96808e5c6))
+* **deps:** update github/codeql-action action to v4.31.3 ([2068fed](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/2068fedafc7c6207d9a4aa43f5303473aaca300c))
+* **deps:** update github/codeql-action action to v4.31.4 ([#137](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/137)) ([37b3dd7](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/37b3dd739dcd1a272aff3328af119747cb4f1c86))
+* **deps:** update golangci/golangci-lint-action action to v9 ([5435e8c](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/5435e8cb38a95efac287cd13674c17657debfce9))
+
+### Build System
+
+* **deps:** update module google.golang.org/api to v0.256.0 ([b1afec5](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/b1afec5cf522e018a25cfe87ee27b18d73480415))
+
 ## [1.2.48](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.47...v1.2.48) (2025-11-12)
 
 ### Miscellaneous Chores
