@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.50](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.49...v1.2.50) (2025-11-21)
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v6 ([be38771](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/be38771df3d33e762dfb03d77ad2a1857de472f3))
+* **deps:** update actions/setup-go action to v6.1.0 ([#139](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/139)) ([2f070fa](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/2f070fa95668ac8f84ab657060c71f7b79e112be))
+* **deps:** update module github.com/golangci/golangci-lint to v2.6.2 ([ebd5334](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/ebd5334b891a4ae4caee81dad12d73355416c1e1))
+
+### Build System
+
+* **deps:** update module github.com/prometheus/common to v0.67.3 ([3ab971c](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3ab971ce2b706aee3bc5d0bc65bb49bbd971a572))
+
 ## [1.2.49](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.48...v1.2.49) (2025-11-19)
 
 ### Miscellaneous Chores
