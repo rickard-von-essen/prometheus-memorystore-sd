@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.55](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.54...v1.2.55) (2025-12-05)
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v4.31.7 ([443cc1a](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/443cc1a5071003e42b8046c404048ed994061297))
+
+### Build System
+
+* **deps:** update quay.io/prometheus/busybox docker digest to fe9080e ([#153](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/153)) ([a9c7aad](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/a9c7aad8379bb305d4b8181d42dc1b010c8749cb))
+
 ## [1.2.54](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.53...v1.2.54) (2025-12-03)
 
 ### Miscellaneous Chores
