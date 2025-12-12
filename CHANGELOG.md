@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.58](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.57...v1.2.58) (2025-12-12)
+
+### Miscellaneous Chores
+
+* **deps:** update module github.com/golangci/golangci-lint to v2.7.0 ([ab5c65d](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/ab5c65d0cf9e802a86357d0b632eb8a62f3715bc))
+* **deps:** update module github.com/golangci/golangci-lint to v2.7.1 ([#159](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/159)) ([7944f06](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/7944f067cae7b698449db8f25ff01686703ac545))
+
+### Build System
+
+* **deps:** update quay.io/prometheus/busybox docker digest to a8cd0ae ([#160](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/160)) ([05f30b7](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/05f30b70c036982dede3af07ab23b5243d779b6c))
+
 ## [1.2.57](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.56...v1.2.57) (2025-12-10)
 
 ### Build System
