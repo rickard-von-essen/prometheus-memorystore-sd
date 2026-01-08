@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.62](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.61...v1.2.62) (2026-01-08)
+
+### Miscellaneous Chores
+
+* **deps:** update module github.com/goreleaser/goreleaser to v2.13.2 ([#169](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/169)) ([ad3168f](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/ad3168f1dd657a6cbd080e260a9fa762dd6d5cd1))
+
+### Build System
+
+* **deps:** update module github.com/prometheus/exporter-toolkit to v0.15.1 ([76e8477](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/76e8477db1f291930ad214c2fc4bd858e96d6e55))
+
 ## [1.2.61](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.60...v1.2.61) (2025-12-30)
 
 ### Build System
