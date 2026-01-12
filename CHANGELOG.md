@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.63](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.62...v1.2.63) (2026-01-12)
+
+### Build System
+
+* **deps:** update module github.com/prometheus/common to v0.67.5 ([#171](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/171)) ([b621c56](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/b621c561e2e81c5e1a5c7990acc5a3e594d10fd7))
+
 ## [1.2.62](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.61...v1.2.62) (2026-01-08)
 
 ### Miscellaneous Chores
