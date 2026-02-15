@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.69](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.68...v1.2.69) (2026-02-15)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency semantic-release to v25.0.3 ([#185](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/185)) ([3682f0e](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3682f0e22761e38db661377f109c3399653b5824))
+* **deps:** update github/codeql-action action to v4.32.2 ([#187](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/187)) ([9e49da3](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/9e49da3d30fca76410ed828e1417c4ab785036d6))
+* **deps:** update github/codeql-action action to v4.32.3 ([#189](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/189)) ([f73755e](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/f73755e8d7f854b0b1bf9890d82b1eba4d227bf4))
+
+### Build System
+
+* **deps:** update quay.io/prometheus/busybox docker digest to 20d41d0 ([#190](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/190)) ([30cc35d](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/30cc35ddad3ae04036661df8b22f98eb41ab29b1))
+
 ## [1.2.68](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.67...v1.2.68) (2026-02-04)
 
 ### Miscellaneous Chores
