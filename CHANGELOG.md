@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.72](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.71...v1.2.72) (2026-02-20)
+
+### Build System
+
+* **deps:** update module google.golang.org/grpc to v1.79.1 ([#193](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/193)) ([4ed99f9](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/4ed99f97710c0476d853003392104e0dcfced09b))
+
 ## [1.2.71](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.70...v1.2.71) (2026-02-18)
 
 ### Build System
