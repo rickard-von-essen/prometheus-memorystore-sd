@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.73](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.72...v1.2.73) (2026-03-06)
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-go action to v6.3.0 ([#197](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/197)) ([e76420b](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/e76420b84ede3c40186f0507edf38aa80407e3fb))
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9.2.0 ([#203](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/203)) ([39c1f9e](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/39c1f9ea6f2f6751e1b4918bd37927c42960548a))
+* **deps:** update dependency golangci/golangci-lint to v2.11.1 ([#206](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/206)) ([48f2ac9](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/48f2ac9eb9ba3f728d10e4e60d881c0cb558999e))
+* **deps:** update docker/login-action action to v4 ([7506194](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/75061948ad0885f16ed6fc843e0b72cde642c80e))
+* **deps:** update github/codeql-action action to v4.32.4 ([#194](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/194)) ([2872f7a](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/2872f7af2ee268bb1e37b0400fa1a0ec3d5a9862))
+* **deps:** update github/codeql-action action to v4.32.5 ([dc8d09f](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/dc8d09f70799fb5fdee9011ec405d8c1f92192c8))
+* **deps:** update github/codeql-action action to v4.32.6 ([#204](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/204)) ([80aeaf2](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/80aeaf208020b62730f54401c93c065742e73b89))
+* **deps:** update goreleaser/goreleaser-action action to v7 ([6824a51](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/6824a51e0267b241466a8b8cb9c2cd833f12d878))
+* **deps:** update module github.com/golangci/golangci-lint to v2.10.1 ([#196](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/196)) ([4922a57](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/4922a57e17cbb53ac8f425e28cf4e2f6ffba5e1f))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.14.0 ([#198](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/198)) ([f30ef59](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/f30ef596f78046f189be508eabe0e09e06fd038d))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.14.1 ([#201](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/201)) ([b769e48](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/b769e485255caa62d16cd62838a3c8657f3fa868))
+
+### Build System
+
+* **deps:** update dependency go to v1.26.1 ([#205](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/205)) ([4cdc7a2](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/4cdc7a22301d0f5897e2259b6dc88740338408e5))
+
 ## [1.2.72](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.71...v1.2.72) (2026-02-20)
 
 ### Build System
