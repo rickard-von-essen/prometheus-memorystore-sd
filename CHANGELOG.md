@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.74](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.73...v1.2.74) (2026-03-13)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9.3.0 ([#208](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/208)) ([ba4a9da](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/ba4a9da03aa30a8098309068ea2c99ccb80c471a))
+* **deps:** update dependency golangci/golangci-lint to v2.11.2 ([#207](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/207)) ([83d4431](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/83d4431bf529189d5519cbbb3fb64f4578987281))
+* **deps:** update dependency golangci/golangci-lint to v2.11.3 ([#210](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/210)) ([4d5a9a0](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/4d5a9a0651f63dc7899b9214b60d150185e6fa28))
+* **deps:** update sigstore/cosign-installer action to v4.1.0 ([#209](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/209)) ([945e5e6](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/945e5e655d7f0c9cd6b3ae524137933ec86e208b))
+
+### Build System
+
+* **deps:** update module google.golang.org/grpc to v1.79.2 ([#211](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/211)) ([89f95b2](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/89f95b237abf4b7ec69254cd33c2adb0991c4823))
+
 ## [1.2.73](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.72...v1.2.73) (2026-03-06)
 
 ### Miscellaneous Chores
