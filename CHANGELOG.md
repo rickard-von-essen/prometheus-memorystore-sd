@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.75](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.74...v1.2.75) (2026-03-15)
+
+### Miscellaneous Chores
+
+* **deps:** update module github.com/goreleaser/goreleaser to v2.14.2 ([#212](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/212)) ([a41f4b3](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/a41f4b3cef2f5502a3d3c3542e6da68606219df1))
+
+### Build System
+
+* **deps:** update quay.io/prometheus/busybox docker digest to 01f4227 ([#213](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/213)) ([b906c89](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/b906c89314417a5f02e366315ab1a81b95fe4c48))
+
 ## [1.2.74](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.73...v1.2.74) (2026-03-13)
 
 ### Miscellaneous Chores
