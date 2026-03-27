@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.76](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.75...v1.2.76) (2026-03-27)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency golangci/golangci-lint to v2.11.4 ([#218](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/218)) ([fec66e1](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/fec66e1d13bd6e223661bf242560bea0993a101b))
+* **deps:** update github/codeql-action action to v4.33.0 ([#214](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/214)) ([562c7b7](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/562c7b74fba0f2fcbd51a6b7a414f4090954fb7c))
+* **deps:** update github/codeql-action action to v4.34.0 ([#216](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/216)) ([31e0960](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/31e09608ba14507bf68a72b7e3b39aee86b2f4bb))
+* **deps:** update github/codeql-action action to v4.34.1 ([#217](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/217)) ([ec54bbe](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/ec54bbeb2f9e631f7eb854dbf197ad26ea8ffe82))
+* **deps:** update github/codeql-action action to v4.35.1 ([#221](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/221)) ([744399d](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/744399d66cb094f0f4f5b02786c425f759c0d979))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.14.3 ([#215](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/215)) ([40a3402](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/40a340255d2474ffafa144887b215182736e08ca))
+
+### Build System
+
+* **deps:** update module google.golang.org/grpc to v1.79.3 ([#219](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/219)) ([e86a3c9](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/e86a3c997ca51e4c6794174eb912942cc2c98751))
+
 ## [1.2.75](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.74...v1.2.75) (2026-03-15)
 
 ### Miscellaneous Chores
