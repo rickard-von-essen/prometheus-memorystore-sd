@@ -157,7 +157,7 @@ func (d *MemorystoreDiscovery) memcacheClient(ctx context.Context) (*memcache.Cl
 
 	opts := make([]option.ClientOption, 0, len(d.clientOptions)+1)
 	if d.cfg.CredentialsFile != "" {
-		opts = append(opts, option.WithCredentialsFile(d.cfg.CredentialsFile))
+		opts = append(opts, option.WithCredentialsFile(d.cfg.CredentialsFile)) //nolint:staticcheck
 	}
 	opts = append(opts, d.clientOptions...)
 
