@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.81](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.80...v1.2.81) (2026-04-27)
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v4.35.2 ([#232](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/232)) ([d69bb18](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/d69bb180aeec67aedaff565a2994bfe66bb37844))
+* **deps:** update goreleaser/goreleaser-action action to v7.1.0 ([#233](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/233)) ([78b48be](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/78b48bee0e77e594e9de639851d56b649d127e52))
+* **deps:** update goreleaser/goreleaser-action action to v7.2.1 ([#235](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/235)) ([533a21f](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/533a21f6a58ba613705dd702bce787d3072da002))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.15.3 ([08d170e](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/08d170ec77a2bb671d32185bffb846136e8af6db))
+* suppress staticcheck SA1019 for WithCredentialsFile ([e8a08d5](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/e8a08d57d968c96cf9ff4c7d0054a1611f73cccf))
+
+### Build System
+
+* **deps:** update module google.golang.org/api to v0.276.0 ([c55ae72](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/c55ae723ab70e2e30ee36489e6580bb3bd6ad98c))
+
 ## [1.2.80](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.79...v1.2.80) (2026-04-16)
 
 ### Build System
