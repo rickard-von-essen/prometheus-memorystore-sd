@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.83](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.82...v1.2.83) (2026-04-27)
+
+### Build System
+
+* **deps:** update module cloud.google.com/go/memcache to v1.14.0 ([e3d8ebe](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/e3d8ebe6327377a2e74612f1665c83880cb194de))
+
 ## [1.2.82](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.81...v1.2.82) (2026-04-27)
 
 ### Bug Fixes
