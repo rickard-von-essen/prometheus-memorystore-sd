@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.95](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.94...v1.2.95) (2026-06-02)
+
+### Build System
+
+* **deps:** update quay.io/prometheus/busybox docker digest to 46274ff ([#259](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/259)) ([c785922](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/c78592216c6095e6babfedede45646c629e37e5c))
+
 ## [1.2.94](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.93...v1.2.94) (2026-06-02)
 
 ### Miscellaneous Chores
