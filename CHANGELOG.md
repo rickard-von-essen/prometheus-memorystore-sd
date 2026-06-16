@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.98](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.97...v1.2.98) (2026-06-16)
+
+### Miscellaneous Chores
+
+* **deps:** update semantic-release monorepo to v25.0.5 ([#269](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/269)) ([d9acb4a](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/d9acb4a3e536d9aeccf1629e2ffca698430bc1b1))
+
+### Build System
+
+* **deps:** update quay.io/prometheus/busybox docker digest to 7459e2d ([#270](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/270)) ([b2e6d5e](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/b2e6d5e0014d0036f087ed4aa703c0555801af67))
+
 ## [1.2.97](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.96...v1.2.97) (2026-06-10)
 
 ### Miscellaneous Chores
