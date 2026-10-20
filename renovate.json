@@ -33,6 +33,16 @@
       "allowedVersions": "<1"
     },
     {
+      "description": "Keep the preset compatible with semantic-release's conventional-changelog-writer v8",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "conventional-changelog-conventionalcommits"
+      ],
+      "allowedVersions": "<10"
+    },
+    {
       "matchDepTypes": [
         "require"
       ],
