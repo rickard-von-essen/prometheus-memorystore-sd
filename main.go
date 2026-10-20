@@ -316,14 +316,13 @@ func main() {
 		collectors.NewProcessCollector(collectors.ProcessCollectorOpts{}),
 		versioncollector.NewCollector("prometheus_memorystore_sd"),
 	)
-	refreshMetrics := discovery.NewRefreshMetrics(reg)
-	metrics, err := discovery.RegisterSDMetrics(reg, refreshMetrics)
+	metrics, err := discovery.CreateAndRegisterSDMetrics(reg)
 	if err != nil {
 		logger.Error("failed to register service discovery metrics", "err", err)
 		os.Exit(1)
 	}
 
-	discMetrics, ok := metrics[conf.Name()]
+	discMetrics, ok := metrics.MechanismMetrics[conf.Name()]
 	if !ok {
 		logger.Error("discoverer metrics not registered")
 		os.Exit(1)

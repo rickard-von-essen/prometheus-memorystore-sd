@@ -118,11 +118,10 @@ func startMemorystoreIntegration(t *testing.T) string {
 
 	logger := promslog.NewNopLogger()
 	reg := prometheus.NewRegistry()
-	refreshMetrics := discovery.NewRefreshMetrics(reg)
-	sdMetrics, err := discovery.RegisterSDMetrics(reg, refreshMetrics)
+	sdMetrics, err := discovery.CreateAndRegisterSDMetrics(reg)
 	require.NoError(t, err, "failed to register service discovery metrics")
 
-	discMetrics, ok := sdMetrics[cfg.Name()]
+	discMetrics, ok := sdMetrics.MechanismMetrics[cfg.Name()]
 	require.True(t, ok, "discoverer metrics not present for config")
 
 	disc, err := cfg.NewDiscoverer(discovery.DiscovererOptions{Logger: logger, Metrics: discMetrics})
