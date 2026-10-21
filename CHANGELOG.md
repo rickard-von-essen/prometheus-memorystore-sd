@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.105](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.104...v1.2.105) (2026-10-21)
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-go action to v7 ([3cb3151](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3cb3151fc237c7bcb9bb10a4098c88ffd1a37d99))
+* **deps:** update cycjimmy/semantic-release-action action to v8 ([037a363](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/037a363aae3bb3eb2ff0b9c6223f1b62a53c2d38))
+* **deps:** update dependency goreleaser/goreleaser to v2.18.3 ([a424a6f](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/a424a6f03afb83d13b033f2beaa03649d920ef04))
+* **deps:** update dependency ubuntu to v26 ([3da36d3](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3da36d35849027e5b430dafcd31b1d0b82985579))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.18.3 ([f47b1b7](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/f47b1b71a5bb5d7e7d4ac275fb695a91d2e282a5))
+
+### Build System
+
+* **deps:** update quay.io/prometheus/busybox docker digest to 7379672 ([7739986](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/7739986f72876ea6b449b7a493787d59677d060e))
+
 ## [1.2.104](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.103...v1.2.104) (2026-10-21)
 
 ### Build System
