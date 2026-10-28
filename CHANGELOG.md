@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.109](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.108...v1.2.109) (2026-10-28)
+
+### Miscellaneous Chores
+
+* **deps:** update cycjimmy/semantic-release-action action to v8.1.4 ([#310](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/310)) ([af31d96](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/af31d96b4950d88763d307f030ff313d83a893f6))
+
+### Build System
+
+* **deps:** update module github.com/prometheus/prometheus to v0.315.1 ([#311](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/311)) ([3e76a77](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/3e76a77ab333ad478c691a50758ba403649f2dea))
+
 ## [1.2.108](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.107...v1.2.108) (2026-10-28)
 
 ### Build System
