@@ -8,8 +8,8 @@ cloud.google.com/go/compute/metadata v0.10.0 h1:pyKMUQSwchgkIBBJGdILqQbs/BNJXqwS
 cloud.google.com/go/compute/metadata v0.10.0/go.mod h1:rGFHRrIif570kSibjFTMbt6/4/tzgJWFGI/HVol4GIk=
 cloud.google.com/go/longrunning v1.2.0 h1:WjYH3YHBGCxGJP9M4dWGHBfXr/cFIjMkNgWcJj7/iMM=
 cloud.google.com/go/longrunning v1.2.0/go.mod h1:5KMQALFGOCtFoi2xSOA1u3H7WKlhmckgiyFw7+LGQp0=
-cloud.google.com/go/memcache v1.18.0 h1:5GyBdt3NS17BMbGhnShy25OsTWuuaQhTyjmPEj36bSY=
-cloud.google.com/go/memcache v1.18.0/go.mod h1:37V7oYdCH2lfRdPCccHL4D4SKn1C/Z6t+yAyp02u7aY=
+cloud.google.com/go/memcache v1.19.0 h1:krb7MBwdXMNNXK3Ea+rhx0lBvXEw4gNdhdBxr8A2dF0=
+cloud.google.com/go/memcache v1.19.0/go.mod h1:jGabMx95nbLRJnhQNZ1rHFgcRvNPHBbPZGvc3+Xit/Q=
 github.com/alecthomas/kingpin/v2 v2.4.0 h1:f48lwail6p8zpO1bC4TxtqACaGqHYA22qkHjHpqDjYY=
 github.com/alecthomas/kingpin/v2 v2.4.0/go.mod h1:0gyi0zQnjuFk8xrkNKamJoyUo382HRL7ATRpFZCw6tE=
 github.com/alecthomas/units v0.0.0-20240927000941-0f3dac36c52b h1:mimo19zliBX/vSQ6PWWSL9lK8qwHozUj03+zLoEB8O0=
