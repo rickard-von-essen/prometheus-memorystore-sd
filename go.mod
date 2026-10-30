@@ -12,7 +12,7 @@ require (
 	github.com/prometheus/exporter-toolkit v0.20.0
 	github.com/prometheus/prometheus v0.315.1
 	github.com/stretchr/testify v1.12.1
-	google.golang.org/api v0.307.0
+	google.golang.org/api v0.308.0
 	google.golang.org/grpc v1.84.0
 )
 
