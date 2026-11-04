@@ -13,7 +13,7 @@ require (
 	github.com/prometheus/prometheus v0.315.1
 	github.com/stretchr/testify v1.12.1
 	google.golang.org/api v0.309.0
-	google.golang.org/grpc v1.84.0
+	google.golang.org/grpc v1.85.0
 )
 
 require (
