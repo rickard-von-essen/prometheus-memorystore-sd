@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.118](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.117...v1.2.118) (2026-11-06)
+
+### Miscellaneous Chores
+
+* **deps:** update docker/login-action action to v4.8.0 ([#324](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/324)) ([05f1b28](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/05f1b28c976297f037d411cf36ece4ff85a7e299))
+
+### Build System
+
+* **deps:** update module github.com/prometheus/common to v0.73.1 ([#325](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/325)) ([1300682](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/130068262c317e425e258300fbf8784e5a0b04f3))
+
 ## [1.2.117](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.116...v1.2.117) (2026-11-05)
 
 ### Miscellaneous Chores
