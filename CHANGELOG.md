@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.119](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.118...v1.2.119) (2026-11-11)
+
+### Build System
+
+* **deps:** update go toolchain directive to v1.27.4 ([#326](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/326)) ([2d79f06](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/2d79f0695d3e842d107cb2356eb9eafe60864ea5))
+
 ## [1.2.118](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.117...v1.2.118) (2026-11-06)
 
 ### Miscellaneous Chores
