@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.126](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.125...v1.2.126) (2026-11-25)
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v4.39.5 ([#339](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/339)) ([a116c01](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/a116c0141a7b75b8ecfb91e6c19b37900d386861))
+* **deps:** update sigstore/cosign-installer action to v4.1.4 ([#340](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/340)) ([751ec72](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/751ec7236a0ed440c39a9e3ecd51feab25dca664))
+
+### Build System
+
+* **deps:** update module google.golang.org/api to v0.316.0 ([#341](https://github.com/rickard-von-essen/prometheus-memorystore-sd/issues/341)) ([247be0e](https://github.com/rickard-von-essen/prometheus-memorystore-sd/commit/247be0e23caaa70b825da533cebd0a8e382f4cc9))
+
 ## [1.2.125](https://github.com/rickard-von-essen/prometheus-memorystore-sd/compare/v1.2.124...v1.2.125) (2026-11-21)
 
 ### Miscellaneous Chores
